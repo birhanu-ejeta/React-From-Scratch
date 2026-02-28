@@ -1,4 +1,5 @@
-#React Fundamental
+# React Fundamental
+## Components is simple and reusable part of code for example
 ```
 function Greeting() {
   return <h2>My First Component</h2>;
