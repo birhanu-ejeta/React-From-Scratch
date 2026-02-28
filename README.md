@@ -22,3 +22,21 @@ password:kdkejidk}
 // this is best example of object distracturing
 
 ```
+
+## children in react
+** is used to render data between my component to UI **
+```
+export default function Book({image,author, title, children}){
+  return(
+    <div>
+        <img src={image} alt="title"/>
+        <h2>{author}</h2>
+        <p>{title}</p>
+<div>{children}</di>
+    </div>)};
+// in the app.js
+import Book from './Book.jsx"
+export default function App(){
+return(
+<Book image="./image/photo1.png" author="birhanu" title="that one is good" }>Wow this book is amazing</Book>)}
+
