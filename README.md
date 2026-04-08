@@ -26,21 +26,25 @@ Learning Curve	Easy to start; very flexible.	Steeper; requires learning type syn
 In JS, you can pass a string to a function meant for numbers, and it won't complain until it's too late.
 
 JavaScript
-`function addNumbers(a, b) {
+` 
+function addNumbers(a, b) {
   return a + b;
 }
 
-console.log(addNumbers(5, "10"));' // Output: "510" (Wait, that's not math!)
+console.log(addNumbers(5, "10"));
+' // Output: "510" (Wait, that's not math!)
 2. TypeScript (Strict and Safe)
 In TS, you define the types. If you try to pass the wrong data, your editor will show a red underline immediately.
 
 TypeScript
-`function addNumbers(a: number, b: number): number {
+` 
+function addNumbers(a: number, b: number): number {
   return a + b;
 }
 
 // @ts-expect-error: This will trigger a compile error!
-console.log(addNumbers(5, "10")); `
+console.log(addNumbers(5, "10"));
+`
 // Error: Argument of type 'string' is not assignable to parameter of type 'number'.
 🛠 Why Choose One Over the Other?
 Use JavaScript when:
